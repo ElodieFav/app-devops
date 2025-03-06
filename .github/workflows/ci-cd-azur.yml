@@ -31,7 +31,7 @@ jobs:
 
       - name: Push Docker Image to Docker Hub
         run: |
-          docker push dodiefav/app-devops:v1
+          docker push dodiefav/app-devops:${{ github.sha }} 
 
       - name: Deploy to Azure
         uses: azure/webapps-deploy@v2  # Action pour déployer sur Azure Web Apps
