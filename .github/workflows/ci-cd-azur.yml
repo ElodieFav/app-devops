@@ -33,8 +33,8 @@ jobs:
         run: |
           docker push dodiefav/app-devops:${{ github.sha }} 
 
-      - name: Deploy to Azure
-        uses: azure/webapps-deploy@v2  # Action pour déployer sur Azure Web Apps
-        with:
-          app-name: 'my-app-devops-ef'  # Remplace 'your-app-name' par le nom de ton application sur Azure
-          publish-profile: ${{ secrets.AZURE_PUBLISH_PROFILE }}  # Secret Azure Publish Profile
+    #   - name: Deploy to Azure
+    #     uses: azure/webapps-deploy@v2  # Action pour déployer sur Azure Web Apps
+    #     with:
+    #       app-name: 'my-app-devops-ef'  # Remplace 'your-app-name' par le nom de ton application sur Azure
+    #       publish-profile: ${{ secrets.AZURE_PUBLISH_PROFILE }}  # Secret Azure Publish Profile
